@@ -1,0 +1,7 @@
+{
+  "slug": "campussync",
+  "name": "CampusSync",
+  "port": 5072,
+  "title": "Good ideas travel offline.",
+  "description": "A shared campus workspace that keeps working when the network does not."
+}
