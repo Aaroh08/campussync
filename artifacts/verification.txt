@@ -10,22 +10,30 @@
 > campussync@1.0.0 test
 > node --test tests/*.test.mjs
 
-(node:10156) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(node:17332) ExperimentalWarning: SQLite is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ workspace validates input and requires invite capability (162.8156ms)
-✔ cross-origin mutations are denied (22.2088ms)
-✔ concurrent offline text and tasks converge without losing independent edits (33.5662ms)
-✔ sync is idempotent, malformed updates rejected, history records real checkpoints (35.592ms)
-✔ rotating an invite revokes the prior capability (23.7026ms)
-(node:22960) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+✔ workspace validates input and requires invite capability (180.9359ms)
+✔ cross-origin mutations are denied (25.5761ms)
+✔ concurrent offline text and tasks converge without losing independent edits (54.3525ms)
+✔ sync is idempotent, malformed updates rejected, history records real checkpoints (52.8273ms)
+✔ rotating an invite revokes the prior capability (35.6707ms)
+(node:3780) ExperimentalWarning: SQLite is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ SQLite state survives closing and reopening the application (47.1165ms)
-✔ ten independently edited clients merge and duplicate retries do not erase work (225.0314ms)
-ℹ tests 7
+✔ invalid JSON shapes return client errors instead of server errors (167.9977ms)
+✔ unknown hosts are rejected even without Origin (25.3255ms)
+✔ workspace export is authenticated and never includes access secrets (36.8614ms)
+✔ deployment rejects invalid ports and requires an explicit external origin (3.0937ms)
+✔ external TLS origin and workspace capacity are enforced (24.5836ms)
+✔ online WAL backup restores source data and refuses overwrites (56.5785ms)
+(node:17640) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ SQLite state survives closing and reopening the application (42.8153ms)
+✔ ten independently edited clients merge and duplicate retries do not erase work (358.0821ms)
+ℹ tests 13
 ℹ suites 0
-ℹ pass 7
+ℹ pass 13
 ℹ fail 0
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 1423.1696
+ℹ duration_ms 912.1556

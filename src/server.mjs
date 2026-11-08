@@ -1,3 +1,4 @@
+import { listen } from "./runtime.mjs";
 import { createApp, finish } from "./core.mjs";
 export function application(options) {
   const s = createApp(options);
@@ -6,7 +7,5 @@ export function application(options) {
 }
 if (process.argv[1]?.endsWith("server.mjs")) {
   const s = application();
-  s.app.listen(s.config.port, "127.0.0.1", () =>
-    console.log("CampusSync http://127.0.0.1:" + s.config.port),
-  );
+  listen(s);
 }
